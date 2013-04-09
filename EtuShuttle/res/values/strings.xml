@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EtuShuttle</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ring_nerede">Ring Nerede?</string>
+    <string name="semt_servis_saatleri">Semt Servis Saatleri</string>
+    <string name="ring_servis_saatleri">Bahceli Ring Saatleri</string>
+    <string name="title_activity_ring_saatleri">RingSaatleri</string>
+    <string name="title_activity_semt_saatleri">SemtSaatleri</string>
+    <string name="title_activity_ring_nerede">RingNerede</string>
+    <string name="title_activity_my_google_maps">MyGoogleMaps</string>
+    <string name="bahceli_to_tobb">Bahcelievler - Emek Ankaray Durağı - Armada - TOBB ETÜ</string>
+    <string name="description_of_bah_to_tobb">Bahcelievler - TOBB ETÜ Servis Güzergahı ve Durakları</string>
+    <string name="title_activity_haritada_goster">HaritadaGoster</string>
+    <string name="s_goster">Servisi Goster</string>
+
+</resources>
