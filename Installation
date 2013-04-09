@@ -1,0 +1,14 @@
+1- Change the database-settings from server.php
+
+2- Upload server.php to your host.
+
+3- Change line 81 on
+   EtuShuttle-Server/src/com/example/postdata/MainActivity.java
+   according to your server.
+
+4- Change line 84 on
+   EtuShuttle/src/com/example/etushuttle/RingNerede.java
+   according to your server.
+
+5- Grab a google-maps API key. (v2)
+   and put it on line 65 of EtuShuttle/AndroidManifest.xml
