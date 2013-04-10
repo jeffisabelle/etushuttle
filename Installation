@@ -6,7 +6,7 @@
    EtuShuttle-Server/src/com/example/postdata/MainActivity.java
    according to your server.
 
-4- Change line 84 on
+4- Change line 84 and 176 on
    EtuShuttle/src/com/example/etushuttle/RingNerede.java
    according to your server.
 
