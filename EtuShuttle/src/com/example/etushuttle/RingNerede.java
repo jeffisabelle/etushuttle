@@ -46,12 +46,12 @@ public class RingNerede extends Activity {
 	Double myLat;
 	Double myLng;
 	LatLng myPos;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_my_google_maps);		
-		
+		setContentView(R.layout.activity_my_google_maps);
+
 		Button button = (Button) this.findViewById(R.id.button1);
 		button.getBackground().setAlpha(200);
 		button.setOnClickListener(new OnClickListener(){
@@ -60,13 +60,13 @@ public class RingNerede extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				try {
-					map.moveCamera(CameraUpdateFactory.newLatLngZoom(postLatLon, zoom));	
-				} catch(Exception e) {}				
+					map.moveCamera(CameraUpdateFactory.newLatLngZoom(postLatLon, zoom));
+				} catch(Exception e) {}
 			}
-			
+
 		});
-		
-		
+
+
 		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map))
 				.getMap();
 		map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
@@ -81,7 +81,7 @@ public class RingNerede extends Activity {
 
 
 		new RequestTask()
-				.execute("http://youserver.com/server.php");
+				.execute("http://yourserver.com/server.php");
 
 	}
 
@@ -130,7 +130,7 @@ public class RingNerede extends Activity {
 			longitude = Double.parseDouble(result.split("#")[1]);
 			LatLng a = new LatLng(latitude, longitude);
 			showCurrentPosition(map, a);
-			
+
 
 		}
 	}
@@ -153,10 +153,10 @@ public class RingNerede extends Activity {
 				.snippet("Su an servis burada")
 				.icon(BitmapDescriptorFactory
 						.fromResource(R.drawable.school_bus_icon)));
-		
+
 		if(!centered) {
 			map.moveCamera(CameraUpdateFactory.newLatLngZoom(postLatLon, zoom));
-			
+
 			map.setOnCameraChangeListener(new OnCameraChangeListener() {
 
 				@Override
@@ -165,15 +165,15 @@ public class RingNerede extends Activity {
 					if (pos.zoom != zoom) {
 						zoom = (int) pos.zoom;
 					}
-									
+
 					map.moveCamera(CameraUpdateFactory.newCameraPosition(pos));
 				}
-			});	
+			});
 		}
 		centered = true;
 
 		new RequestTask()
-				.execute("http://muhammetcan.net/dosya/425/server.php");
+				.execute("http://yourserver.com/server.php");
 
 		return postLatLon;
 	}
